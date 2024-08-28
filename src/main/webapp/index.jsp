@@ -7,19 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1">
-		<tr>
-			<th>번호</th>
-			<th>제목</th>
-			<th>작성자</th>
-			<th>작성명</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>우리 정말 이대로 괜찮은가..?</td>
-			<td>박셩훈</td>
-			<td>2024-08-26</td>
-		</tr>
-	</table>
+ㅎㅇ<br>
+수정
+<a href="/user/user-list.jsp">유저리스트</a>
 </body>
 </html>

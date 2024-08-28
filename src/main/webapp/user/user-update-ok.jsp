@@ -1,3 +1,4 @@
+<%@page import="test.web.common.DBCon"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -15,10 +16,10 @@
 	String uiPwd = request.getParameter("uiPwd");
 	String uiName = request.getParameter("uiName");
 	
-	Connection con = Deprecated.getCon();
+	Connection con = DBCon.getCon();
 	Statement stmt = con.createStatement();
 	
-	String sql = "UPDATE "USER_INFO\R\N"
+	String sql = "UPDATE USER_INFO\r\n"
 			+ "SET UI_NAME='" + uiName + "',\r\n"
 			+ "UI_ID= '" + uiId + "',\r\n"
 			+ "UI_PWD='" + uiPwd + "',\r\n"
