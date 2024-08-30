@@ -33,7 +33,7 @@ if(result==1){
 %>
 <script>
 	alert('저장성공!');
-	location.href='/menu/menu-list.jsp';
+	location.href='/students/students-list.jsp';
 </script>
 <% 
 }

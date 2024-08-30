@@ -10,7 +10,7 @@
 
 <form action="/students/students-insert-ok.jsp" method="POST">
 	이름 : <input type="text" name="miName"><br>
-	생년월일 : <input type="date" name="miDate"><br>
+	생년월일 : <input type="text" name="miDate"><br>
 	학년 : <input type="text" name="miSchoolYear"><br>
 	연락처 : <input type="text" name="miPhNum"><br>
 	주소 : <textarea name="miAdress"></textarea><br>

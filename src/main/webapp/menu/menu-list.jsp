@@ -31,18 +31,18 @@ String miName = request.getParameter("miName") == null ? "" : request.getParamet
 	</tr>
 	
 <%
-	Connection con = DBCon.getCon();
-	String sql = "SELECT MI_NUM, MI_NAME, MI_PRICE, MI_DESC FROM MENU_INFO";
-	if(miName != null && !miName.equals("")){
-		sql += " WHERE MI_NAME LIKE ?"; // 띄어쓰기
-	}
-	PreparedStatement ps = con.prepareStatement(sql);
-	if(miName != null && !miName.equals("")){
-		ps.setString(1, "%" + miName + "%");
-	}
-	
-	ResultSet rs = ps.executeQuery();
-	while(rs.next()){	
+Connection con = DBCon.getCon();
+String sql = "SELECT MI_NUM, MI_NAME, MI_PRICE, MI_DESC FROM MENU_INFO";
+if(miName != null && !miName.equals("")){
+	sql += " WHERE MI_NAME LIKE ?"; // 띄어쓰기
+}
+PreparedStatement ps = con.prepareStatement(sql);
+if(miName != null && !miName.equals("")){
+	ps.setString(1, "%" + miName + "%");
+}
+
+ResultSet rs = ps.executeQuery();
+while(rs.next()){	
 %>
 <tr>
 	<th><%=rs.getString("MI_NUM") %></th>

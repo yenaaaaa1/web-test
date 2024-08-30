@@ -12,6 +12,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <%
 String miNum = request.getParameter("miNum"); 
 Connection con = DBCon.getCon(); 
